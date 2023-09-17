@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -109,11 +109,11 @@
 
 
             <div class="offers-container">
-                <div class="offers-box">
+                <div class="offers-box" data-aos="fade-up" data-aos-duration="100">
                     <div class="shadow-img"></div>
                     <div class="offersView">
 
-                        <div class="offers-infoBox">
+                        <div class="offers-infoBox" >
 
 
 
@@ -143,7 +143,7 @@
                     <!-- <button class="boxButton boxButtonAnimation ">Wybierz</button> -->
 
                 </div>
-                <div class="offers-box offers-box2">
+                <div class="offers-box offers-box2" data-aos="fade-down" data-aos-duration="200">
                     <div class="shadow-img"></div>
                     <div class="offersView">
 
@@ -174,7 +174,7 @@
                     <!-- <button class="boxButton boxButtonAnimation ">Wybierz</button> -->
                     <h3 class="offers-box-h3">Praca z najmłodszymi</h3>
                 </div>
-                <div class="offers-box offers-box3">
+                <div class="offers-box offers-box3" data-aos="fade-up" data-aos-duration="300">
                     <div class="shadow-img"></div>
                     <div class="offersView">
 
@@ -221,10 +221,13 @@
                 <div class="breithBackground2"></div>
                 <img src="./img/J.png" alt="" class="about-us-img">
                 <div class="about-us-text">
-                    <p class="about-us-p">O mnie</p>
-                    <h3 class="h3Aboutus">Cześć, jestem Justyna!
+                    <p class="about-us-p" data-aos="fade-right"
+                    data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="200">O mnie</p>
+                    <h3 class="h3Aboutus" data-aos="fade-right"
+                    data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="300">Cześć, jestem Justyna!
                     </h3>
-                    <p class="aboutusP">Ukończyłam filologię angielską na Uniwersytecie Szczecińskim i zdobyłam tytuł
+                    <p class="aboutusP" data-aos="fade-right"
+                    data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="390">Ukończyłam filologię angielską na Uniwersytecie Szczecińskim i zdobyłam tytuł
                         magistra.
 
                         Posiadam również certyfikat interlokutora. Przeprowadzam egzaminy ustne Pearson English
@@ -254,7 +257,7 @@
         <section class="prices" id="prices">
             <h2 class="prices-h2">Cennik</h2>
             <div class="prices-container">
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <div class="card-h3">Zajęcia
                         <br> 45 min
                     </div>
@@ -264,7 +267,7 @@
                         <p>60 zł</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <div class="card-h3">Zajęcia <br> 60 min</div>
                     <div class="img two"></div>
                     <div class="text text-two">
@@ -272,7 +275,7 @@
                         <p>90 zł</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in">
                     <div class="card-h3">Zajęcia <br> 90 min</div>
                     <div class="img three"></div>
                     <div class="text text-three">
@@ -403,7 +406,18 @@
 
 
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+
+    <script>
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            offset: 200,
+            once: true
+        });
+    </script> <script src="./js/main.js"></script>
 </body>
 
 </html>

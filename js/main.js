@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const parallaxImages = document.querySelector('.about-us-img');
 	const movePictureUp = () => {
 		const scrollValue = window.scrollY;
-		const scrollSpeed = 0.018; // Dostosuj prędkość przesuwania zdjęć
+		const scrollSpeed = 0.019; // Dostosuj prędkość przesuwania zdjęć
 		const imgTop = parallaxImages.getBoundingClientRect().top;
 		const maxTop = 350;
 	  
