@@ -190,7 +190,7 @@ body {
   background-color: pink;
   margin: 30px;
   overflow: hidden;
-  background-image: url(./img/Jbudka.jpg);
+  background-image: url(https://pixabay.com/get/g3dab900daff32b59f84ef07fc5e29a27baa160c39fb6ac172d0cd1a435999a0a7b412120a03a64e680292a0fb0705d7e25848b65da10ddc9928b34326c5ed0fc478671bd3798e7ee0e2b3b0d87e905ac_640.jpg);
   background-size: cover;
   transition: transform 0.5s;
   cursor: pointer;
@@ -270,12 +270,12 @@ body {
   margin-top: 150px;
 }
 .offers .offers-container .offers-box .offersView3 {
-  background-image: url(./img/dart-38220_640.png);
+  background-image: url(/img/dart-38220_640.png);
   background-size: cover;
   background-position: -200px 0px;
 }
 .offers .offers-container .offers-box .offersView6 {
-  background-image: url(./img/taxi-1932107_640.jpg);
+  background-image: url(/img/taxi-1932107_640.jpg);
   background-size: cover;
 }
 .offers .offers-container .offers-box2 {
