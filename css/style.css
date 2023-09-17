@@ -13,6 +13,7 @@ html {
 
 body {
   height: 100%;
+  font-family: "Belleza", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -23,6 +24,7 @@ body {
   height: 800px;
   background-color: #eec0c6;
   background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+  font-family: "Belleza", sans-serif;
   overflow: hidden;
 }
 .header .box-img {
@@ -157,18 +159,19 @@ body {
   color: white;
 }
 .header .header-text .headerP {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 10px;
 }
 .header .header-text .headerP2 {
   position: absolute;
-  top: 200px;
+  top: 230px;
   left: 0px;
   font-size: 1rem;
   margin: 10px;
 }
 
 .offers {
+  font-family: "Noto Serif", serif;
   width: 100%;
   height: 100%;
 }
@@ -262,10 +265,11 @@ body {
 }
 .offers .offers-container .offers-box .offersView2 .offers-box-p {
   width: 90%;
-  margin-top: 100px;
+  margin-top: 80px;
   line-height: 1.5;
   z-index: 1;
   color: white;
+  font-size: 0.89rem;
 }
 .offers .offers-container .offers-box .offersView2 .offers-box-p-2 {
   margin-top: 200px;
@@ -293,6 +297,7 @@ body {
 }
 
 .about-us {
+  font-family: "Noto Serif", serif;
   position: relative;
   width: 100%;
   height: 750px;
@@ -339,6 +344,7 @@ body {
   font-size: 1.5rem;
 }
 .about-us .about-us-container .about-us-text .h3Aboutus {
+  color: #723d46;
   font-size: 2.8em;
   padding: 10px;
   padding-left: 0px;
@@ -352,6 +358,7 @@ body {
   flex-direction: column;
   height: 800px;
   width: 100%;
+  font-family: "Noto Serif", serif;
 }
 .prices .prices-h2 {
   text-align: center;
@@ -390,10 +397,12 @@ body {
   background-image: url(../img/girl-2771936_640.jpg);
 }
 .prices .prices-container .two {
-  background-image: url(../img/J2.jpg);
+  background-image: url(../img/girl-1345800_640.jpg);
 }
 .prices .prices-container .three {
-  background-image: url(../img/J3.jpg);
+  background-image: url(../img/english-2724442_640.jpg);
+  background-size: cover;
+  background-position: -69px 0;
 }
 .prices .prices-container .text {
   position: absolute;
@@ -411,6 +420,10 @@ body {
 .prices .prices-container h3 {
   margin-top: 260px;
   margin-bottom: 20px;
+  font-size: 2rem;
+}
+.prices .prices-container p {
+  font-size: 1.5rem;
 }
 .prices .prices-container .text-one {
   transform: rotateX(-180deg);
@@ -470,6 +483,7 @@ body {
   width: 100%;
   height: 100% x;
   overflow: hidden;
+  font-family: "Noto Serif", serif;
 }
 .terms-and-conditions .terms-and-conditions-container {
   width: 100%;
@@ -493,6 +507,7 @@ body {
   transition: opacity 0.6s; /* Czas trwania animacji */
 }
 .terms-and-conditions .terms-and-conditions-container .terms-and-conditions-text-container {
+  padding-bottom: 50px;
   width: 75%;
 }
 .terms-and-conditions .terms-and-conditions-container .terms-and-conditions-text-container .terms-h2 {
@@ -505,6 +520,9 @@ body {
   font-size: 1.2rem;
 }
 
+.opinions {
+  font-family: "Noto Serif", serif;
+}
 .opinions .h2-opinions {
   text-align: center;
   margin: 50px;
@@ -517,6 +535,7 @@ body {
   height: 300px;
   background-color: #f6ecc4;
   background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+  font-family: "Noto Serif", serif;
 }
 .contact .h2-contact {
   padding: 50px;
@@ -554,6 +573,7 @@ body {
   height: 230px;
   background-color: #eec0c6;
   background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+  font-family: "Noto Serif", serif;
 }
 .footer .footer-container {
   display: flex;
@@ -620,7 +640,7 @@ body {
   .header {
     position: relative;
     width: 100%;
-    height: 1200px;
+    height: 1000px !important;
     overflow: hidden;
   }
   .header .box-img {
@@ -836,6 +856,7 @@ body {
   .prices .prices-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .prices .prices-container .card {
     position: relative;
@@ -861,15 +882,6 @@ body {
     background-position: center;
     background-size: cover;
     transition: 0.8s;
-  }
-  .prices .prices-container .one {
-    background-image: url(/img/girl-2771936_640.jpg);
-  }
-  .prices .prices-container .two {
-    background-image: url(/img/J2.jpg);
-  }
-  .prices .prices-container .three {
-    background-image: url(/img/J3.jpg);
   }
   .prices .prices-container .text {
     position: absolute;
@@ -980,22 +992,27 @@ body {
     margin-top: -100px;
     background-color: #eec0c6;
     background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+    overflow: hidden;
   }
   .footer .footer-container {
     display: flex;
     flex-direction: column;
   }
   .footer .footer-container .navbar-title {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
     position: relative;
     margin: 30px;
     margin-right: 0px;
   }
   .footer .footer-container .navbar-title .flag {
     position: absolute;
-    top: 5px;
-    left: 20px;
-    width: 80px;
+    top: 6px;
+    left: 100px;
+    width: 60px;
     height: auto;
+    margin-left: 20px;
     animation: ikonAnimation 2s linear infinite;
   }
   .footer .footer-container .navbar-title .title {

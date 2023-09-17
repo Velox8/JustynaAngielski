@@ -7,9 +7,12 @@
 	padding: 0;
 }
 
-html{scroll-behavior: smooth;}
+html {
+	scroll-behavior: smooth;
+}
 body {
 	height: 100%;
+	font-family: 'Belleza', sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -20,7 +23,7 @@ body {
 	height: 800px;
 	background-color: #eec0c6;
 	background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
-
+	font-family: 'Belleza', sans-serif;
 	overflow: hidden;
 	.box-img {
 		position: absolute;
@@ -167,22 +170,29 @@ body {
 			.h1-span {
 				display: block;
 				color: white;
+			
 			}
 		}
 		.headerP {
-			font-size: 1.2rem;
+			font-size: 1.5rem;
 			margin: 10px;
+			
 		}
 		.headerP2 {
 			position: absolute;
-			top: 200px;
+			top: 230px;
 			left: 0px;
 			font-size: 1rem;
 			margin: 10px;
+			
+		
 		}
 	}
 }
 .offers {
+
+
+	font-family: 'Noto Serif', serif;
 	width: 100%;
 	height: 100%;
 	.h2Offers {
@@ -288,10 +298,11 @@ body {
 				// }
 				.offers-box-p {
 					width: 90%;
-					margin-top: 100px;
+					margin-top: 80px;
 					line-height: 1.5;
 					z-index: 1;
 					color: white;
+					font-size: 0.89rem;
 				}
 				.offers-box-p-2 {
 					margin-top: 200px;
@@ -322,6 +333,8 @@ body {
 	}
 }
 .about-us {
+
+	font-family: 'Noto Serif', serif;
 	position: relative;
 	width: 100%;
 	height: 750px;
@@ -342,6 +355,7 @@ body {
 	}
 	.h2About-us {
 		text-align: center;
+		
 	}
 	.about-us-container {
 		display: flex;
@@ -375,6 +389,7 @@ body {
 				font-size: 1.5rem;
 			}
 			.h3Aboutus {
+				color: #723d46;
 				font-size: 2.8em;
 				padding: 10px;
 				padding-left: 0px;
@@ -391,6 +406,7 @@ body {
 	flex-direction: column;
 	height: 800px;
 	width: 100%;
+	font-family: 'Noto Serif', serif;
 	.prices-h2 {
 		text-align: center;
 		margin: 50px;
@@ -430,10 +446,12 @@ body {
 			background-image: url(../img/girl-2771936_640.jpg);
 		}
 		.two {
-			background-image: url(../img/J2.jpg);
+			background-image: url(../img/girl-1345800_640.jpg);
 		}
 		.three {
-			background-image: url(../img/J3.jpg);
+			background-image: url(../img/english-2724442_640.jpg);
+			background-size: cover;
+			background-position: -69px 0;
 		}
 
 		.text {
@@ -453,7 +471,11 @@ body {
 		h3 {
 			margin-top: 260px;
 			margin-bottom: 20px;
+
+			font-size: 2rem;
 		}
+
+		p{font-size: 1.5rem;}
 
 		.text-one {
 			transform: rotateX(-180deg);
@@ -522,6 +544,8 @@ body {
 
 	overflow: hidden;
 
+	font-family: 'Noto Serif', serif;
+
 	.terms-and-conditions-container {
 		width: 100%;
 		height: 100%;
@@ -548,6 +572,7 @@ body {
 		}
 
 		.terms-and-conditions-text-container {
+			padding-bottom: 50px;
 			.terms-h2 {
 				text-align: center;
 				font-size: 2.3rem;
@@ -559,25 +584,31 @@ body {
 				margin: 20px;
 				font-size: 1.2rem;
 			}
+
 		}
 	}
 }
 
 .opinions {
+
+
+
+	font-family: 'Noto Serif', serif;
 	.h2-opinions {
 		text-align: center;
 		margin: 50px;
 		font-size: 2.3rem;
 	}
 }
-.contact { 
+.contact {
 	margin-top: 100px;
 	width: 100%;
 	height: 300px;
 	background-color: #f6ecc4;
-background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+	background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+	font-family: 'Noto Serif', serif;
 
-	.h2-contact{
+	.h2-contact {
 		padding: 50px;
 		text-align: center;
 		font-size: 2.3rem;
@@ -614,6 +645,7 @@ background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
 	height: 230px;
 	background-color: #eec0c6;
 	background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+	font-family: 'Noto Serif', serif;
 
 	.footer-container {
 		display: flex;
@@ -685,7 +717,7 @@ background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
 	.header {
 		position: relative;
 		width: 100%;
-		height: 1200px;
+		height: 1000px !important;
 
 		overflow: hidden;
 		.box-img {
@@ -928,6 +960,7 @@ background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
 		.prices-container {
 			display: flex;
 			flex-direction: column;
+			align-items: center;
 			.card {
 				position: relative;
 				min-width: 300px;
@@ -957,15 +990,7 @@ background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
 				transition: 0.8s;
 			}
 
-			.one {
-				background-image: url(/img/girl-2771936_640.jpg);
-			}
-			.two {
-				background-image: url(/img/J2.jpg);
-			}
-			.three {
-				background-image: url(/img/J3.jpg);
-			}
+			
 
 			.text {
 				position: absolute;
@@ -1046,16 +1071,15 @@ background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
 			}
 		}
 	}
-	
-	
-	.contact { 
+
+	.contact {
 		margin-top: 100px;
 		width: 100%;
 		height: 600px;
 		background-color: #f6ecc4;
-	background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
-	
-		.h2-contact{
+		background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+
+		.h2-contact {
 			padding: 50px;
 			text-align: center;
 			font-size: 2.3rem;
@@ -1073,7 +1097,7 @@ background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
 					.fa-brands {
 						font-size: 1.5rem;
 					}
-	
+
 					.fa-soild {
 						font-size: 1.5rem;
 					}
@@ -1084,28 +1108,37 @@ background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
 			}
 		}
 	}
-	
+
 	.footer {
+
 		width: 100%;
 		height: 100%;
 		margin-top: -100px;
 		background-color: #eec0c6;
 		background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
-		
+overflow: hidden;
 		.footer-container {
 			display: flex;
 			flex-direction: column;
+			
+			
 			.navbar-title {
+				display: flex;
+				justify-content: flex-start;
+				width: 100%;
 				position: relative;
 				margin: 30px;
 				margin-right: 0px;
+				
 
 				.flag {
 					position: absolute;
-					top: 5px;
-					left: 20px;
-					width: 80px;
+					top: 6px;
+					left: 100px;
+					width: 60px;
+				 
 					height: auto;
+					margin-left: 20px;
 					animation: ikonAnimation 2s linear infinite;
 				}
 
