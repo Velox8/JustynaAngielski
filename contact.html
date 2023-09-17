@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <script src="https://kit.fontawesome.com/1b654c37e3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:ital,wght@0,200;0,400;0,500;0,600;0,700;0,900;1,500&family=Ysabeau+Infant:wght@1;300;500;700&display=swap"
+        rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+
+    <nav class="nav-desktop">
+
+        <div class="navbar-title"> <i class="fa-solid fa-tree"><a href="index.html#home"></a></i>
+            <a href="index.html#home" class="title">Forest</a>
+        </div>
+        <div class="nav-bar "><a class="nav-item" href="index.html#home">Home</a>
+            <a class="nav-item" href="index.html#about-us">O nas</a>
+            <a class="nav-item" href="index.html#oferts">Oferta</a>
+            <a class="nav-item active" href="contact.html">Kontakt</a>
+        </div>
+    </nav>
+    <nav class="nav-mobile">
+
+        <div class="nav-bar2">
+            <a class="a" href="index.html#home">Home</a>
+            <a class="a" href="index.html#about-us">O nas</a>
+            <a class="a" href="index.html#oferts">Oferty</a>
+            <a class="a" href="contact.html">Kontakt</a>
+        </div>
+    </nav>
+
+
+    <section class="contact section" id="contact">
+        <button class="burger">
+            <i class="fas fa-bars"></i>
+
+
+
+        </button>
+
+
+
+
+
+        <div class="contact-container">
+            <div class="shadow-img"></div>
+
+            <h2 class="h2Contact">Kontakt</h2>
+
+            <div class="contact-boxes">
+                <div class="contact-box">
+                    <h3 class="h3Contact">Adres</h3>
+                    <p class="contact-info contact-info1"><i class="fa-solid fa-house"></i> ul. Sezamkowa 2</p>
+                    <p class="contact-info contact-info1"><i class="fa-solid fa-signs-post"></i> 83-600</p>
+                    <p class="contact-info contact-info1"><i class="fa-solid fa-city"></i> Łódź</p>
+                </div>
+                <div class="contact-box contact-box2">
+                    <h3 class="h3Contact">Social media</h3>
+                    <a href="" class="contact-info"><i class="fa-brands fa-facebook"></i> </a>
+                    <a href="" class="contact-info"><i class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="" class="contact-info"><i class="fa-brands fa-instagram"></i> </a>
+                </div>
+                <div class="contact-box">
+                    <h3 class="h3Contact">Kontakt</h3>
+                    <p class="contact-info contact-info1"><i class="fa-solid fa-phone"></i> +48 000-000-000</p>
+                    <p class="contact-info contact-info1"><i class="fa-solid fa-phone"></i> +48 000-000-000</p>
+                    <p class="contact-info contact-info1"><i class="fa-solid fa-envelope"></i> mail@gmail.com</p>
+                </div>
+            </div>
+            <a class="contactButton2 boxButtonAnimation" href="#contactForm"> Napisz do nas!</a>
+        </div>
+
+        <div class="iframe-container">
+            <iframe class="iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.898233927734!2d19.890269276246357!3d50.0881921715253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1687693537023!5m2!1spl!2spl"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+        </div>
+
+    </section>
+    <section class="about-us2 section" ] id="contact">
+        <h2 class="h2About-us2">Zaufaj nam i przeżyj przygodę!</h2>
+
+
+
+        <div class="about-us2-container">
+            <div class="about-us2-box" data-aos="fade-up" data-aos-delay="400">
+                <p><i class="fa-solid fa-paw"></i></p>
+                <p class="aboutus2-card-tittle">Kochamy zwierzęta</p>
+                <p class="aboutus2-card-text">Wspieramy schroniska dla zwierząt</p>
+            </div>
+            <div class="about-us2-box" data-aos="fade-up" data-aos-delay="500">
+                <p><i class="fa-solid fa-burger"></i></p>
+                <p class="aboutus2-card-tittle">Jedzenie</p>
+                <p class="aboutus2-card-text">Prowadzimy zdrowy tryb życia</p>
+            </div>
+            <div class="about-us2-box" data-aos="fade-up" data-aos-delay="600">
+                <p><i class="fa-solid fa-champagne-glasses"></i></p>
+                <p class="aboutus2-card-tittle">Świetne relacje</p>
+                <p class="aboutus2-card-text" id="contactForm">Tworzymy świetne relacje z naszymi klientami</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contactForm">
+        <form class="contact-form">
+
+            <div class="contact-form-base">
+                <label for="name" class="contact-form-label">Imię i
+                    nazwisko:</label>
+                <input type="text" class="contact-form-input" id="name" placeholder="Wpisz imię i nazwisko">
+                <p class="error-text"></p>
+            </div>
+            <div class="contact-form-base">
+                <label for="email" class="contact-form-label">Adres e-mail:</label>
+                <input type="email" id="email" class="contact-form-input" placeholder="wpisz email">
+                <p class="error-text"></p>
+            </div>
+            <div class="contact-form-base"> <label for="msg" class="contact-form-label">Wiadomość:</label>
+                <textarea id="msg" class="contact-form-textarea" placeholder="Wpisz wiadomość"></textarea>
+                <p class="error-text"></p>
+            </div>
+            <button type="submit" class="contact-form-button boxButtonAnimation">Wyślij</button>
+            
+        </form>
+    </section>
+    
+
+
+
+
+
+
+    <footer class="footer section">
+
+        <div class="footer-container">
+            <div class="footer-title-container">
+                <i class="fa-solid fa-tree"></i>
+                <p href="" class="footer-title">Forest</p>
+
+            </div>
+
+            <div class="footer-box-container">
+                <div class="footer-box">
+                    <h3 class="h3Footer">O nas</h3>
+                    <a href="" class="footerP">Historia</a>
+                    <a href="" class="footerP">Parki</a>
+                    <a href="" class="footerP">Opinie</a>
+                </div>
+                <div class="footer-box">
+                    <h3 class="h3Footer">Nasza firma</h3>
+                    <a href="" class="footerP">Praca</a>
+                    <a href="" class="footerP">Kadry</a>
+                    <a href="" class="footerP">Zarząd</a>
+                </div>
+                <div class="footer-box">
+                    <h3 class="h3Footer">Dokumenty</h3>
+                    <a href="" class="footerP">Wnioski</a>
+                    <a href="" class="footerP">Rezerwacje</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="line"></div>
+        <p class="footer-bootom-text"> &copy<span class="footer-year"> </span> Forest Group Company Ltd.</p>
+
+
+
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+@keyframes ikonAnimation {
+  0% {
+    transform: translateY(0deg);
+  }
+  100% {
+    transform: translateY(30deg);
+  }
+}/*# sourceMappingURL=animations.css.map */
