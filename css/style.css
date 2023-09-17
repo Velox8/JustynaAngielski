@@ -280,11 +280,11 @@ body {
 }
 .offers .offers-container .offers-box2 {
   margin-top: 100px;
-  background-image: url(/img/J3.jpg);
+  background-image: url(../img/J3.jpg);
 }
 .offers .offers-container .offers-box3 {
   margin-top: 200px;
-  background-image: url(/img/england.jpg);
+  background-image: url(../img/england.jpg);
   background-position: -50px 0;
 }
 
@@ -297,6 +297,7 @@ body {
   overflow: hidden;
 }
 .about-us .about-us-img {
+  display: flex;
   position: absolute;
   top: 300px;
   right: -260px;
@@ -329,6 +330,7 @@ body {
   transition: opacity 0.6s; /* Czas trwania animacji */
 }
 .about-us .about-us-container .about-us-text .about-us-p {
+  margin: 0;
   text-align: left;
   font-size: 1.5rem;
 }
@@ -730,6 +732,57 @@ body {
     font-size: 1rem;
     width: 90%;
   }
+  .about-us {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+    overflow: hidden;
+  }
+  .about-us .about-us-img {
+    display: none;
+    position: absolute;
+    top: 300px;
+    right: -260px;
+    width: 1000px;
+    height: auto;
+    transition: top 3s;
+  }
+  .about-us .h2About-us {
+    text-align: center;
+  }
+  .about-us .about-us-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .about-us .about-us-container .about-us-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .about-us .about-us-container .about-us-text .about-us-p {
+    margin: 20px;
+    text-align: center;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .about-us .about-us-container .about-us-text .h3Aboutus {
+    margin: 20px;
+    text-align: center;
+    font-size: 2.8em;
+    padding: 10px;
+    padding-left: 0px;
+  }
+  .about-us .about-us-container .about-us-text .aboutusP {
+    line-height: 1.5;
+  }
 }
 @media (max-width: 810px) {
   .header {
@@ -886,298 +939,6 @@ body {
     transform: translate(-50%);
     font-size: 1rem;
     margin: 10px;
-  }
-  .offers {
-    width: 100%;
-    height: 100%;
-  }
-  .offers .h2Offers {
-    text-align: center;
-    margin: 50px;
-    font-size: 2.6rem;
-  }
-  .offers .h3Offers {
-    margin: 50px;
-    text-align: center;
-  }
-  .offers .offers-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .offers .offers-container .offers-box {
-    position: relative;
-    flex-wrap: wrap;
-    width: 450px;
-    height: 500px;
-    background-color: pink;
-    margin: 30px;
-    overflow: hidden;
-    background-image: url(/img/Jbudka.jpg);
-    background-size: cover;
-    transition: transform 0.5s;
-    cursor: pointer;
-    border-radius: 20%;
-  }
-  .offers .offers-container .offers-box .shadow-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 0;
-  }
-  .offers .offers-container .offers-box .offers-box-h3 {
-    position: absolute;
-    top: 26%; /* Przesunięcie wertykalne do środka elementu */
-    left: 50%; /* Przesunięcie poziome do środka elementu */
-    transform: translate(-50%, -50%); /* Centrowanie w obu kierunkach */
-    margin-top: 0; /* Resetowanie marginesu górnego */
-    /* ... pozostałe style ... */
-    z-index: 1;
-    font-size: 2rem;
-    color: white;
-    transition: opacity 0.2s 0.2s;
-  }
-  .offers .offers-container .offers-box:hover {
-    transform: scale(1.05);
-  }
-  .offers .offers-container .offers-box:hover .offersView2 {
-    opacity: 1;
-    transition-delay: 0.2s;
-  }
-  .offers .offers-container .offers-box:hover .offers-box-h3 {
-    opacity: 0;
-  }
-  .offers .offers-container .offers-box:hover .offersView3 {
-    opacity: 1;
-  }
-  .offers .offers-container .offers-box:hover .offersView6 {
-    opacity: 1;
-  }
-  .offers .offers-container .offers-box .offersView {
-    font-size: 1rem;
-  }
-  .offers .offers-container .offers-box .offersView2 {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(/img/girl-2771936_640.jpg);
-    background-size: cover;
-    transition: opacity 1s;
-  }
-  .offers .offers-container .offers-box .offersView2 .shadow-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 0;
-  }
-  .offers .offers-container .offers-box .offersView2 .offers-box-p {
-    width: 90%;
-    margin-top: 100px;
-    line-height: 1.5;
-    z-index: 1;
-    color: white;
-  }
-  .offers .offers-container .offers-box .offersView2 .offers-box-p-2 {
-    margin-top: 200px;
-  }
-  .offers .offers-container .offers-box .offersView2 .offers-box-p-3 {
-    margin-top: 150px;
-  }
-  .offers .offers-container .offers-box .offersView3 {
-    background-image: url(/img/dart-38220_640.png);
-    background-size: cover;
-    background-position: -200px 0px;
-  }
-  .offers .offers-container .offers-box .offersView6 {
-    background-image: url(../img/taxi-1932107_640.jpg);
-    background-size: cover;
-  }
-  .offers .offers-container .offers-box2 {
-    margin-top: 100px;
-    background-image: url(/img/J3.jpg);
-  }
-  .offers .offers-container .offers-box3 {
-    margin-top: 200px;
-    background-image: url(/img/england.jpg);
-    background-position: -50px 0;
-  }
-  .about-us {
-    position: relative;
-    width: 100%;
-    height: 750px;
-    background-color: #eec0c6;
-    background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
-    overflow: hidden;
-  }
-  .about-us .about-us-img {
-    position: absolute;
-    top: 300px;
-    right: -260px;
-    width: 1000px;
-    height: auto;
-    transition: top 3s;
-  }
-  .about-us .h2About-us {
-    text-align: center;
-  }
-  .about-us .about-us-container {
-    display: flex;
-    justify-content: flex-start;
-    margin: 50px;
-    margin-top: 150px;
-    margin-left: 150px;
-    width: 30%;
-    height: 100%;
-  }
-  .about-us .about-us-container .breithBackground2 {
-    content: "";
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    transform: translate(-50%, -50%);
-    width: 1800px; /* Szerokość obszaru */
-    height: 1800px; /* Wysokość obszaru */
-    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.705) 0%, rgba(255, 255, 255, 0) 50%);
-    opacity: 0.6; /* Początkowa przezroczystość */
-    transition: opacity 0.6s; /* Czas trwania animacji */
-  }
-  .about-us .about-us-container .about-us-text .about-us-p {
-    text-align: left;
-    font-size: 1.5rem;
-  }
-  .about-us .about-us-container .about-us-text .h3Aboutus {
-    font-size: 2.8em;
-    padding: 10px;
-    padding-left: 0px;
-  }
-  .about-us .about-us-container .about-us-text .aboutusP {
-    line-height: 1.5;
-  }
-  .prices {
-    display: flex;
-    flex-direction: column;
-    height: 800px;
-    width: 100%;
-  }
-  .prices .prices-h2 {
-    text-align: center;
-    margin: 50px;
-    font-size: 2.3rem;
-  }
-  .prices .prices-container {
-    display: flex;
-    justify-content: center;
-  }
-  .prices .prices-container .card {
-    position: relative;
-    min-width: 300px;
-    max-width: 350px;
-    height: 500px;
-    margin: 20px 80px;
-    perspective: 800px;
-    cursor: pointer;
-  }
-  .prices .prices-container .card .card-h3 {
-    position: absolute;
-    bottom: -80px;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 2rem;
-  }
-  .prices .prices-container .img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    background-position: center;
-    background-size: cover;
-    transition: 0.8s;
-  }
-  .prices .prices-container .one {
-    background-image: url(/img/girl-2771936_640.jpg);
-  }
-  .prices .prices-container .two {
-    background-image: url(/img/J2.jpg);
-  }
-  .prices .prices-container .three {
-    background-image: url(/img/J3.jpg);
-  }
-  .prices .prices-container .text {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    background-image: linear-gradient(315deg, #fee2f8, #dcf8cf 74%);
-    opacity: 0;
-    transition: 0.8s;
-  }
-  .prices .prices-container h3 {
-    margin-top: 260px;
-    margin-bottom: 20px;
-  }
-  .prices .prices-container .text-one {
-    transform: rotateX(-180deg);
-  }
-  .prices .prices-container .text-two {
-    transform: rotateY(-180deg);
-  }
-  .prices .prices-container .card:hover .text {
-    transform: rotate(0);
-    opacity: 1;
-  }
-  .prices .prices-container .card:hover .one {
-    transform: rotateX(180deg);
-    opacity: 0;
-  }
-  .prices .prices-container .card:hover .two {
-    transform: rotateY(-180deg);
-    opacity: 0;
-  }
-  .prices .prices-container .card:hover .three {
-    animation: up 0.8s;
-  }
-  .prices .prices-container .card:hover .text-three {
-    animation: down 0.8s;
-  }
-  @keyframes up {
-    0% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    50% {
-      transform: translateY(-60%);
-    }
-    80% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  @keyframes down {
-    0% {
-      transform: translateY(0);
-      z-index: -1;
-    }
-    50% {
-      transform: translateY(60%);
-      z-index: -1;
-    }
-    100% {
-      z-index: 1;
-    }
   }
   .terms-and-conditions {
     position: relative;
