@@ -190,7 +190,7 @@ body {
   background-color: pink;
   margin: 30px;
   overflow: hidden;
-  background-image: url(/img/Jbudka.jpg);
+  background-image: url(../img/Jbudka.jpg);
   background-size: cover;
   transition: transform 0.5s;
   cursor: pointer;
@@ -243,7 +243,7 @@ body {
   opacity: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/img/girl-2771936_640.jpg);
+  background-image: url(../img/girl-2771936_640.jpg);
   background-size: cover;
   transition: opacity 1s;
 }
@@ -383,13 +383,13 @@ body {
   transition: 0.8s;
 }
 .prices .prices-container .one {
-  background-image: url(/img/girl-2771936_640.jpg);
+  background-image: url(../img/girl-2771936_640.jpg);
 }
 .prices .prices-container .two {
-  background-image: url(/img/J2.jpg);
+  background-image: url(../img/J2.jpg);
 }
 .prices .prices-container .three {
-  background-image: url(/img/J3.jpg);
+  background-image: url(../img/J3.jpg);
 }
 .prices .prices-container .text {
   position: absolute;
@@ -782,6 +782,194 @@ body {
   }
   .about-us .about-us-container .about-us-text .aboutusP {
     line-height: 1.5;
+  }
+  .prices {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .prices .prices-h2 {
+    text-align: center;
+    margin: 50px;
+    font-size: 2.3rem;
+  }
+  .prices .prices-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .prices .prices-container .card {
+    position: relative;
+    min-width: 300px;
+    max-width: 350px;
+    height: 500px;
+    margin: 10px;
+    margin-bottom: 100px;
+    perspective: 800px;
+    cursor: pointer;
+  }
+  .prices .prices-container .card .card-h3 {
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 2rem;
+  }
+  .prices .prices-container .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    transition: 0.8s;
+  }
+  .prices .prices-container .one {
+    background-image: url(/img/girl-2771936_640.jpg);
+  }
+  .prices .prices-container .two {
+    background-image: url(/img/J2.jpg);
+  }
+  .prices .prices-container .three {
+    background-image: url(/img/J3.jpg);
+  }
+  .prices .prices-container .text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    background-image: linear-gradient(315deg, #fee2f8, #dcf8cf 74%);
+    opacity: 0;
+    transition: 0.8s;
+  }
+  .prices .prices-container h3 {
+    margin-top: 260px;
+    margin-bottom: 20px;
+  }
+  .prices .prices-container .text-one {
+    transform: rotateX(-180deg);
+  }
+  .prices .prices-container .text-two {
+    transform: rotateY(-180deg);
+  }
+  .prices .prices-container .card:hover .text {
+    transform: rotate(0);
+    opacity: 1;
+  }
+  .prices .prices-container .card:hover .one {
+    transform: rotateX(180deg);
+    opacity: 0;
+  }
+  .prices .prices-container .card:hover .two {
+    transform: rotateY(-180deg);
+    opacity: 0;
+  }
+  .prices .prices-container .card:hover .three {
+    animation: up 0.8s;
+  }
+  .prices .prices-container .card:hover .text-three {
+    animation: down 0.8s;
+  }
+  @keyframes up {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-60%);
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes down {
+    0% {
+      transform: translateY(0);
+      z-index: -1;
+    }
+    50% {
+      transform: translateY(60%);
+      z-index: -1;
+    }
+    100% {
+      z-index: 1;
+    }
+  }
+  .footer {
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+  }
+  .footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .footer .footer-container .navbar-title {
+    position: relative;
+    margin: 30px;
+    margin-right: 0px;
+  }
+  .footer .footer-container .navbar-title .flag {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 80px;
+    height: auto;
+    animation: ikonAnimation 2s linear infinite;
+  }
+  .footer .footer-container .navbar-title .title {
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgba(17, 8, 15, 0.7411764706);
+  }
+  .footer .footer-container .navbar-title .title span {
+    display: block;
+    font-size: 2.8rem;
+    margin-left: 10px;
+    color: rgba(17, 8, 15, 0.7411764706);
+  }
+  .footer .footer-box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-box-container .footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-box-container .footer-box .footerP {
+    margin: 30px;
+    font-size: 1.5rem;
+    transition: color 0.5s;
+  }
+  .footer .footer-box-container .footer-box .footerP .fa-brands {
+    font-size: 1.5rem;
+  }
+  .footer .footer-box-container .footer-box .footerP .fa-soild {
+    font-size: 1.5rem;
+  }
+  .footer .footer-box-container .footer-box .footerP:hover {
+    color: #fff;
+  }
+  .footer .footer-bootom-text {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+  .footer .footer-bootom-text .footer-year {
+    margin-right: 10px;
   }
 }
 @media (max-width: 810px) {
