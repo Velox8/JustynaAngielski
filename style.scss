@@ -6,6 +6,8 @@
 	margin: 0;
 	padding: 0;
 }
+
+html{scroll-behavior: smooth;}
 body {
 	height: 100%;
 	margin: 0;
@@ -568,7 +570,6 @@ body {
 		font-size: 2.3rem;
 	}
 }
-
 .contact { 
 	margin-top: 100px;
 	width: 100%;
@@ -1045,18 +1046,55 @@ background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
 			}
 		}
 	}
+	
+	
+	.contact { 
+		margin-top: 100px;
+		width: 100%;
+		height: 600px;
+		background-color: #f6ecc4;
+	background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+	
+		.h2-contact{
+			padding: 50px;
+			text-align: center;
+			font-size: 2.3rem;
+		}
+		.contact-box-container {
+			display: flex;
+			flex-direction: column;
+			.contact-box {
+				display: flex;
+				flex-direction: column;
+				.contactP {
+					margin: 30px;
+					font-size: 1.5rem;
+					transition: color 0.5s;
+					.fa-brands {
+						font-size: 1.5rem;
+					}
+	
+					.fa-soild {
+						font-size: 1.5rem;
+					}
+					&:hover {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	
 	.footer {
 		width: 100%;
 		height: 100%;
-		width: 100%;
-		height: 100%;
+		margin-top: -100px;
 		background-color: #eec0c6;
 		background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
-
+		
 		.footer-container {
 			display: flex;
 			flex-direction: column;
-			margin-top: 100px;
 			.navbar-title {
 				position: relative;
 				margin: 30px;
