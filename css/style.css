@@ -22,8 +22,7 @@ body {
   position: relative;
   width: 100%;
   height: 800px;
-  background-color: #e2c9be;
-  background-image: linear-gradient(315deg, #eee8e6 0%, #fbf7e9 74%);
+  background-color: #fff;
   font-family: "Roboto", sans-serif;
   overflow: hidden;
 }
