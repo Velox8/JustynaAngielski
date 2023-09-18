@@ -36,7 +36,7 @@ body {
   border-top-left-radius: 80%;
   border-top-right-radius: 80%;
   border-bottom-right-radius: 0%;
-  border-bottom-left-radius: 60%;
+  border-bottom-left-radius: 80%;
   overflow: hidden;
 }
 .header .box-img .main-img {
