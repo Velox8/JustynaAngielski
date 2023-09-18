@@ -197,7 +197,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	navBar.addEventListener('wheel', disableScroll, { passive: false });
 
 	const addActive = () => {
-		navBar.classList.toggle('nav-mobile-active');
+		navBar.classList.toggle('nav-mobile-active')
+		if (navBar.classList.contains('nav-mobile-active')) {
+			console.log('Klasa "nav-mobile-active" została dodana do navBar.');
+		} else {
+			console.log('Klasa "nav-mobile-active" została usunięta z navBar.');
+		}
 	};
 
 	const removeA = () => {
@@ -208,13 +213,27 @@ document.addEventListener('DOMContentLoaded', function () {
 		footerYear.innerText = year;
 	};
 
+	burgerBtn.addEventListener('click', () => {
+		console.log('Przycisk "burgerBtn" został kliknięty.');
+		
+		if (navBar.classList.contains('nav-mobile-active')) {
+			console.log('Klasa "nav-mobile-active" została dodana do navBar.');
+		} else {
+			console.log('Klasa "nav-mobile-active" została usunięta z navBar.');
+		}
+		
+		// Tutaj możesz dodać dodatkowe działania, które wykonują się po kliknięciu przycisku.
+	});
+
 	handleCurrentYear();
 
-	faSolid.addEventListener('click', function () {
-		window.location.href = 'index.html#home';
-	});
+	// faSolid.addEventListener('click', function () {
+	// 	window.location.href = 'index.html#home';
+	// });
 	burgerBtn.addEventListener('click', addActive);
 	navItem.forEach((item) => {
 		item.addEventListener('click', removeA);
 	});
+
+	
 });

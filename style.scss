@@ -536,7 +536,6 @@ body {
 			opacity: 0;
 			transition: 0.8s;
 		}
-		       
 
 		h3 {
 			margin-top: 260px;
@@ -797,7 +796,6 @@ body {
 	}
 }
 
-
 @media (max-width: 811px) {
 	.header {
 		position: relative;
@@ -805,6 +803,7 @@ body {
 		height: 1000px !important;
 
 		overflow: hidden;
+
 		.box-img {
 			position: absolute;
 			width: 350px;
@@ -818,7 +817,7 @@ body {
 			border-top-right-radius: 80%;
 			border-bottom-right-radius: 80%;
 			border-bottom-left-radius: 60%;
-			
+
 			overflow: hidden;
 
 			.main-img {
@@ -867,8 +866,7 @@ body {
 				.title {
 					align-self: center;
 					text-align: center;
-					margin-left: 5%;
-					margin-right: 5%;
+					margin: 0;
 					font-size: 2rem;
 					text-decoration: none;
 					color: #11080fbd;
@@ -941,10 +939,49 @@ body {
 		}
 
 		.nav-mobile {
-			display: none;
+			display: flex;
+			position: fixed;
+			padding-top: 50px;
+			text-align: center;
+			height: 100vh;
+			width: 100%;
+			right: 800px;
+			list-style: none;
+
+			transition: transform 0.3s;
+			background-color: white;
+			overflow: hidden;
+			z-index: 20;
+			.nav-bar2 {
+				.a {
+					display: block;
+					margin: 1em;
+					padding: 10px 30px;
+					font-size: 2rem;
+					color: rgba(11, 11, 11, 0.8666666667);
+					text-decoration: none;
+					overflow: hidden;
+				}
+			}
 		}
+		
+		.nav-mobile-active {
+			transform: translateX(800px);
+		}
+		
 		.burger {
-			display: none;
+			display: flex;
+			position: fixed;
+			top: 50px;
+			right: 30px;
+			font-size: 45px;
+			background: none;
+			border: none;
+			cursor: pointer;
+			color: rgb(145, 156, 147);
+			transition: transform 0.3s;
+			z-index: 500;
+			
 		}
 
 		.header-text {
@@ -966,7 +1003,6 @@ body {
 					top: 150px;
 					display: block;
 					// color: white;
-					
 				}
 			}
 			.headerP {
@@ -1033,7 +1069,7 @@ body {
 					margin: 20px;
 					text-align: center;
 					text-align: left;
-					font-size: 1.5rem;
+					font-size: 1.86rem;
 				}
 				.h3Aboutus {
 					margin: 20px;
@@ -1322,14 +1358,13 @@ body {
 		}
 	}
 	.contact {
-		margin-top: 100px;
+		// margin-top: 100px;
 		width: 100%;
 		height: 600px;
 		background-color: #f6ecc4;
 		background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
 
 		.h2-contact {
-			
 			padding: 50px !important;
 			text-align: center;
 			font-size: 2.3rem;
