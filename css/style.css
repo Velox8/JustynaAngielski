@@ -694,7 +694,7 @@ body {
   margin-right: 10px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 811px) {
   .header {
     position: relative;
     width: 100%;
@@ -1160,6 +1160,7 @@ body {
   .contact .contact-box-container {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
   .contact .contact-box-container .contact-box {
     display: flex;
