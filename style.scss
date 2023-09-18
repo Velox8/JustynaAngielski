@@ -961,6 +961,35 @@ body {
 					color: rgba(11, 11, 11, 0.8666666667);
 					text-decoration: none;
 					overflow: hidden;
+					&:nth-child(1) {
+						color: rgb(125, 194, 36);
+					}
+	
+					/* Kolor dla drugiego elementu */
+					&:nth-child(2) {
+						color: rgb(128, 0, 85);
+					}
+	
+					/* Kolor dla trzeciego elementu */
+					&:nth-child(3) {
+						color: rgb(50, 133, 161);
+					}
+					&:nth-child(4) {
+						color: rgb(255, 0, 195);
+					}
+	
+					/* Kolor dla drugiego elementu */
+					&:nth-child(5) {
+						color: yellow;
+					}
+	
+					/* Kolor dla trzeciego elementu */
+					&:nth-child(6) {
+						color: royalblue;
+					}
+					&:nth-child(7) {
+						color: rgb(255, 0, 149);
+					}
 				}
 			}
 		}
@@ -972,7 +1001,7 @@ body {
 		.burger {
 			display: flex;
 			position: fixed;
-			top: 50px;
+			top: 56px;
 			right: 30px;
 			font-size: 45px;
 			background: none;
