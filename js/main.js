@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		const maxTop = 350;
 	  
 		// Ogranicz przesunięcie obrazka w górę
-		if (scrollValue < 3000) {
+		if (scrollValue < 1500) {
 		  const offset = (scrollValue - imgTop) * scrollSpeed;
 		  parallaxImages.style.top = -offset + 'px';
 		}
