@@ -52,7 +52,7 @@ body {
   transform: translate(-50%, -50%);
   width: 1800px; /* Szerokość obszaru */
   height: 1800px; /* Wysokość obszaru */
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.705) 0%, rgba(255, 255, 255, 0) 50%);
+  background: radial-gradient(circle at center, rgba(222, 73, 120, 0.705) 0%, rgba(255, 255, 255, 0) 50%);
   opacity: 0.5; /* Początkowa przezroczystość */
   transition: opacity 0.6s; /* Czas trwania animacji */
 }
