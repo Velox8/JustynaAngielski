@@ -21,8 +21,12 @@ body {
 	position: relative;
 	width: 100%;
 	height: 800px;
-	background-color: #eec0c6;
-	background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+
+
+
+	background-color: #e2c9be;
+background-image: linear-gradient(315deg, #eee8e6 0%, #fbf7e9 74%);
+
 	font-family: 'Belleza', sans-serif;
 	overflow: hidden;
 	.box-img {
@@ -117,6 +121,35 @@ body {
 				color: #0000009f;
 
 				transition: transform 1s, color 0.2s;
+				&:nth-child(1) {
+					color: rgb(125, 194, 36);
+				}
+
+				/* Kolor dla drugiego elementu */
+				&:nth-child(2) {
+					color: rgb(128, 0, 85);
+				}
+
+				/* Kolor dla trzeciego elementu */
+				&:nth-child(3) {
+					color: rgb(50, 133, 161);
+				}
+				&:nth-child(4) {
+					color: rgb(255, 0, 195);
+				}
+
+				/* Kolor dla drugiego elementu */
+				&:nth-child(5) {
+					color: yellow;
+				}
+
+				/* Kolor dla trzeciego elementu */
+				&:nth-child(6) {
+					color: royalblue;
+				}
+				&:nth-child(7) {
+					color: rgb(255, 0, 149);
+				}
 
 				&:before {
 					content: '';
@@ -125,27 +158,27 @@ body {
 					left: -5px;
 					width: 3px;
 					height: 200%;
-					background-color: white; // Ustaw tło na transparentne
+					background-color:  rgb(228, 101, 122);
 					transition: top 0.3s;
 					color: white;
 					opacity: 0;
 				}
 				&::after {
 					content: '';
-					color: white;
+					color:   rgb(228, 101, 122);
 				}
 			}
 			.nav-item:hover::before {
 				top: -10px;
-				color: white; // Dodaj zmianę koloru tekstu
+				color:   rgb(228, 101, 122); // Dodaj zmianę koloru tekstu
 				opacity: 1;
 			}
 			.nav-item:hover::after {
-				color: white; // Dodaj zmianę koloru tekstu
+				color:   rgb(228, 101, 122);
 				opacity: 1;
 			}
 			.nav-item:hover {
-				color: white;
+				color:  rgb(228, 101, 122);
 			}
 		}
 	}
@@ -169,7 +202,7 @@ body {
 			font-size: 3rem;
 			.h1-span {
 				display: block;
-				color: white;
+				color:   rgb(228, 101, 122);
 			}
 		}
 		.headerP {
@@ -178,10 +211,51 @@ body {
 		}
 		.headerP2 {
 			position: absolute;
-			top: 230px;
+			top: 180px;
 			left: 0px;
 			font-size: 1rem;
 			margin: 10px;
+		}
+		.a-contact-button {
+		
+			// position: absolute;
+			// top: 300px;
+		
+			width: 50px;
+			height: 10px;
+
+			.contact-button {
+				position: absolute;
+				top: 230px;
+				left: 10px;
+				background-color: rgb(228, 101, 122);
+				border: none;
+				color: white;
+				padding: 10px 20px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				border-top-left-radius: 25px;
+				border-bottom-left-radius: 25px;
+				border-top-right-radius: 25px;
+				border-bottom-right-radius: 25px;
+				transition: background-color 0.3s ease; // Dodaj animację zmiany koloru tła
+				&:hover {
+				  background-color: #2980b9; // Zmiana koloru tła po najechaniu kursorem
+				}
+			  }
+			  
+			  // Dodatkowy styl dla klasy a-contact-button
+			  .a-contact-button {
+				text-decoration: none;
+			  }
+			  
+			  // Dodatkowy styl dla klasy shadow-img (jeśli jest potrzebny)
+			  .shadow-img {
+				// Dodaj style cienia obrazu
+				box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+			  }
 		}
 	}
 }
@@ -211,7 +285,7 @@ body {
 			height: 500px;
 			background-color: pink;
 			margin: 30px;
-			overflow: hidden;
+			// overflow: hidden;
 			background-image: url(../img/Jbudka.jpg);
 			background-size: cover;
 			// border: 6px solid pink;
@@ -221,26 +295,26 @@ body {
 			cursor: pointer;
 
 			border-radius: 20%;
-			.shadow-img {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background-color: rgba(0, 0, 0, 0.6);
-				z-index: 0;
-			}
+			// .shadow-img {
+			// 	position: absolute;
+			// 	top: 0;
+			// 	left: 0;
+			// 	width: 100%;
+			// 	height: 100%;
+			// 	background-color: rgba(0, 0, 0, 0.6);
+			// 	z-index: 0;
+			// }
 			.offers-box-h3 {
 				position: absolute;
-				top: 26%; /* Przesunięcie wertykalne do środka elementu */
+				top: -50px; /* Przesunięcie wertykalne do środka elementu */
 				left: 50%; /* Przesunięcie poziome do środka elementu */
 				transform: translate(-50%, -50%); /* Centrowanie w obu kierunkach */
 				margin-top: 0; /* Resetowanie marginesu górnego */
 				/* ... pozostałe style ... */
-				z-index: 1;
+				z-index: 2;
 				// margin-top: 50px;
 				font-size: 2rem;
-				color: white;
+				color: black;
 				transition: opacity 0.2s 0.2s;
 			}
 			&:hover {
@@ -262,16 +336,20 @@ body {
 
 			.offersView {
 				font-size: 1rem;
+				border-radius: 20%;
 			}
 
 			.offersView2 {
+				border-radius: 20%;
 				position: absolute;
 				display: flex;
 				justify-content: center;
 				opacity: 0;
 				width: 100%;
 				height: 100%;
-				background-image: url(../img/girl-2771936_640.jpg);
+				// background-image: url(../img/girl-2771936_640.jpg);
+				background-color: #f6ecc4;
+				background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
 
 				background-size: cover;
 
@@ -295,7 +373,7 @@ body {
 					margin-top: 80px;
 					line-height: 1.5;
 					z-index: 1;
-					color: white;
+					color: rgb(0, 0, 0);
 					font-size: 0.89rem;
 				}
 				.offers-box-p-2 {
@@ -306,12 +384,14 @@ body {
 				}
 			}
 			.offersView3 {
-				background-image: url(../img/dart-38220_640.png);
+				// background-image: url(../img/dart-38220_640.png);
 				background-size: cover;
 				background-position: -200px 0px;
+				border-radius: 20%;
 			}
 			.offersView6 {
-				background-image: url(../img/taxi-1932107_640.jpg);
+				// background-image: url(../img/taxi-1932107_640.jpg);
+				background-color: #e290bc;
 				background-size: cover;
 			}
 		}
@@ -415,10 +495,10 @@ body {
 			margin: 20px 80px;
 			perspective: 800px;
 
-			cursor: pointer;
+			// cursor: pointer;
 			.card-h3 {
 				position: absolute;
-				bottom: -80px;
+				bottom: -100px;
 				left: 50%;
 				transform: translate(-50%);
 				font-size: 2rem;
@@ -579,6 +659,7 @@ body {
 				font-size: 1.2rem;
 			}
 			h3 {
+				padding: 30px;
 				font-size: 1.5rem;
 			}
 		}
@@ -586,20 +667,24 @@ body {
 }
 
 .opinions {
+	background-color: #eec0c6;
+		background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
 	font-family: 'Noto Serif', serif;
 	.h2-opinions {
 		text-align: center;
-		margin: 50px;
+		
+		padding: 50px;
 		font-size: 2.3rem;
 	}
 }
 .contact {
-	margin-top: 100px;
+	// margin-top: 100px;
 	width: 100%;
 	height: 300px;
 	background-color: #f6ecc4;
 	background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
 	font-family: 'Noto Serif', serif;
+
 
 	.h2-contact {
 		padding: 50px;
@@ -617,12 +702,18 @@ body {
 				margin: 30px;
 				font-size: 1.5rem;
 				transition: color 0.5s;
+				padding-left: 10px;
 				.fa-brands {
 					font-size: 1.5rem;
+					margin-right: 10px !important;
 				}
-
-				.fa-soild {
+	
+				.fa-square-phone {
+					margin-right: 10px;
 					font-size: 1.5rem;
+				}
+				.fa-envelope{
+					margin-right: 10px;
 				}
 				&:hover {
 					color: #fff;
@@ -964,13 +1055,14 @@ body {
 				margin-bottom: 100px;
 				perspective: 800px;
 
-				cursor: pointer;
+				// cursor: pointer;
 				.card-h3 {
 					position: absolute;
-					bottom: -80px;
+					bottom: -90px;
 					left: 50%;
 					transform: translate(-50%);
 					font-size: 2rem;
+					margin: 10px;
 				}
 			}
 
