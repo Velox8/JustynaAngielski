@@ -942,6 +942,7 @@ body {
     transition: top 0.2s;
   }
   .about-us .h2About-us {
+    font-size: 2rem;
     text-align: center;
   }
   .about-us .about-us-container {
@@ -968,7 +969,7 @@ body {
   .about-us .about-us-container .about-us-text .h3Aboutus {
     margin: 20px;
     text-align: center;
-    font-size: 2.8em;
+    font-size: 2.3em;
     padding: 10px;
     padding-left: 0px;
   }
