@@ -964,12 +964,12 @@ body {
 					&:nth-child(1) {
 						color: rgb(125, 194, 36);
 					}
-	
+
 					/* Kolor dla drugiego elementu */
 					&:nth-child(2) {
 						color: rgb(128, 0, 85);
 					}
-	
+
 					/* Kolor dla trzeciego elementu */
 					&:nth-child(3) {
 						color: rgb(50, 133, 161);
@@ -977,12 +977,12 @@ body {
 					&:nth-child(4) {
 						color: rgb(255, 0, 195);
 					}
-	
+
 					/* Kolor dla drugiego elementu */
 					&:nth-child(5) {
 						color: yellow;
 					}
-	
+
 					/* Kolor dla trzeciego elementu */
 					&:nth-child(6) {
 						color: royalblue;
@@ -993,11 +993,11 @@ body {
 				}
 			}
 		}
-		
+
 		.nav-mobile-active {
 			transform: translateX(800px);
 		}
-		
+
 		.burger {
 			display: flex;
 			position: fixed;
@@ -1010,7 +1010,6 @@ body {
 			color: rgb(145, 156, 147);
 			transition: transform 0.3s;
 			z-index: 500;
-			
 		}
 
 		.header-text {
@@ -1506,6 +1505,247 @@ body {
 			font-size: 1.5rem;
 			.footer-year {
 				margin-right: 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1500px) {
+	.header {
+		position: relative;
+		width: 100%;
+		height: 800px;
+
+		background-color: #fff;
+		// background-image: linear-gradient(315deg, #eee8e6 0%, #fbf7e9 74%);
+
+		font-family: 'Roboto', sans-serif;
+		overflow: hidden;
+		.box-img {
+			position: absolute;
+			width: 690px;
+
+			height: auto;
+			top: 350px;
+			right: -30px;
+			// border-radius: 50%;
+			border-top-left-radius: 80%;
+			border-top-right-radius: 80%;
+			border-bottom-right-radius: 0%;
+			border-bottom-left-radius: 80%;
+			overflow: hidden;
+
+			.main-img {
+				width: 100%;
+				height: 100%;
+				transition: transform 2s;
+				// object-position: 30px 0px;
+			}
+		}
+		.breithBackground {
+			content: '';
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			transform: translate(-50%, -50%);
+			width: 1800px; /* Szerokość obszaru */
+			height: 1800px; /* Wysokość obszaru */
+			background: radial-gradient(
+				circle at center,
+				rgba(222, 73, 120, 0.705) 0%,
+				rgba(255, 255, 255, 0) 50%
+			);
+			opacity: 0.5; /* Początkowa przezroczystość */
+			transition: opacity 0.6s; /* Czas trwania animacji */
+		}
+		.nav-desktop {
+			display: flex;
+			justify-content: flex-end;
+			position: relative;
+
+			.navbar-title {
+				position: absolute;
+				top: 0 px;
+				left: 30px;
+				margin: 30px;
+				margin-right: 350px;
+				margin-left: 10px;
+				
+
+				.title {
+					font-size: 2rem;
+					text-decoration: none;
+					color: #11080fbd;
+					white-space: nowrap;
+
+					span {
+						display: block;
+						font-size: 2.8rem;
+						margin-left: 10px;
+						color: #11080fbd;
+					}
+				}
+				@keyframes ikonAnimation {
+					0% {
+						transform: translateX(0);
+					}
+					10% {
+						transform: translateX(-2px) translateY(-2px);
+					}
+
+					0% {
+						transform: translateX(0px) translateY(0px);
+					}
+				}
+			}
+			.nav-bar {
+				margin: 10px;
+				margin-top: 50px;
+				margin-right: 100px;
+				white-space: nowrap;
+				.nav-item {
+					position: relative;
+					font-size: 1.5rem;
+					margin: 10px;
+					text-decoration: none;
+					color: #0000009f;
+
+					transition: transform 1s, color 0.2s;
+					&:nth-child(1) {
+						color: rgb(125, 194, 36);
+					}
+
+					/* Kolor dla drugiego elementu */
+					&:nth-child(2) {
+						color: rgb(128, 0, 85);
+					}
+
+					/* Kolor dla trzeciego elementu */
+					&:nth-child(3) {
+						color: rgb(50, 133, 161);
+					}
+					&:nth-child(4) {
+						color: rgb(255, 0, 195);
+					}
+
+					/* Kolor dla drugiego elementu */
+					&:nth-child(5) {
+						color: yellow;
+					}
+
+					/* Kolor dla trzeciego elementu */
+					&:nth-child(6) {
+						color: royalblue;
+					}
+					&:nth-child(7) {
+						color: rgb(255, 0, 149);
+					}
+
+					&:before {
+						content: '';
+						position: absolute;
+						top: -38px;
+						left: -5px;
+						width: 3px;
+						height: 200%;
+						background-color: rgb(228, 101, 122);
+						transition: top 0.3s;
+						color: white;
+						opacity: 0;
+					}
+					&::after {
+						content: '';
+						color: rgb(228, 101, 122);
+					}
+				}
+				.nav-item:hover::before {
+					top: -10px;
+					color: rgb(228, 101, 122); // Dodaj zmianę koloru tekstu
+					opacity: 1;
+				}
+				.nav-item:hover::after {
+					color: rgb(228, 101, 122);
+					opacity: 1;
+				}
+				.nav-item:hover {
+					color: rgb(228, 101, 122);
+				}
+			}
+		}
+
+		.nav-mobile {
+			display: none;
+		}
+		.burger {
+			display: none;
+		}
+
+		.header-text {
+			position: relative;
+			min-width: 50%;
+			margin: 50px;
+			margin-top: 240px;
+			margin-left: 100px;
+			.h1Header {
+				margin-left: 10px;
+				color: #723d46;
+				font-weight: bold;
+				font-size: 3rem;
+				.h1-span {
+					display: block;
+					color: rgb(228, 101, 122);
+				}
+			}
+			.headerP {
+				font-size: 1.5rem;
+				margin: 10px;
+			}
+			.headerP2 {
+				position: absolute;
+				top: 180px;
+				left: 0px;
+				font-size: 1rem;
+				margin: 10px;
+			}
+			.a-contact-button {
+				// position: absolute;
+				// top: 300px;
+
+				width: 50px;
+				height: 10px;
+
+				.contact-button {
+					position: absolute;
+					top: 230px;
+					left: 10px;
+					background-color: rgb(228, 101, 122);
+					border: none;
+					color: white;
+					padding: 10px 20px;
+					text-align: center;
+					text-decoration: none;
+					display: inline-block;
+					font-size: 16px;
+					border-top-left-radius: 25px;
+					border-bottom-left-radius: 25px;
+					border-top-right-radius: 25px;
+					border-bottom-right-radius: 25px;
+					transition: background-color 0.3s ease; // Dodaj animację zmiany koloru tła
+					&:hover {
+						background-color: #2980b9; // Zmiana koloru tła po najechaniu kursorem
+					}
+				}
+
+				// Dodatkowy styl dla klasy a-contact-button
+				.a-contact-button {
+					text-decoration: none;
+				}
+
+				// Dodatkowy styl dla klasy shadow-img (jeśli jest potrzebny)
+				.shadow-img {
+					// Dodaj style cienia obrazu
+					box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+				}
 			}
 		}
 	}
