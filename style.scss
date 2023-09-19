@@ -806,7 +806,7 @@ body {
 
 		.box-img {
 			position: absolute;
-			width: 350px;
+			width: 350px !important;
 
 			height: auto;
 			top: 260px;
@@ -947,11 +947,11 @@ body {
 			width: 100%;
 			right: 800px;
 			list-style: none;
-
+			margin-top: -180px;
 			transition: transform 0.3s;
 			background-color: white;
 			overflow: hidden;
-			z-index: 20;
+			z-index: 999;
 			.nav-bar2 {
 				.a {
 					display: block;
@@ -1510,7 +1510,7 @@ body {
 	}
 }
 
-@media (max-width: 1500px) {
+@media (min-width: 812px) and (max-width: 1500px) {
 	.header {
 		position: relative;
 		width: 100%;
@@ -1565,12 +1565,11 @@ body {
 
 			.navbar-title {
 				position: absolute;
-				top: 0 px;
+				top: 0px;
 				left: 30px;
 				margin: 30px;
 				margin-right: 350px;
 				margin-left: 10px;
-				
 
 				.title {
 					font-size: 2rem;
