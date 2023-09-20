@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	window.addEventListener('scroll', movePictureUp);
 
 	const movePictureUp2 = () => {
-		const isDesktop = window.matchMedia('(min-width: 992px)').matches;
+		const isDesktop = window.matchMedia('(min-width: 1200px)').matches;
 		if (isDesktop === true) {
 			const scrollValue = window.scrollY;
 			parallaxImages2.forEach((img) => {
