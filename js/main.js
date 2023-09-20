@@ -12,36 +12,64 @@ document.addEventListener('DOMContentLoaded', function () {
 	const msgNew = document.querySelector('#msg');
 
 	const backgroundHeader = document.querySelector('.header');
+	// const backgroundOffers2 = document.querySelector('.offers2-container');
+
 	const backgroundAboutUs = document.querySelector('.about-us-container');
-	const backgroundTerms = document.querySelector('.terms-and-conditions-container');
+	// const backgroundBox = document.querySelector('.offers2-box2');
+
+	const backgroundTerms = document.querySelector(
+		'.terms-and-conditions-container'
+	);
 	const brigthBackground = document.querySelector('.breithBackground');
 	const brigthBackground2 = document.querySelector('.breithBackground2');
 	const brightBackground3 = document.querySelector('.breithBackground3');
+	const brightBackground4 = document.querySelector('.breithBackground4');
+	const brightBackground5 = document.querySelector('.breithBackground5');
 
 	const parallaxImages = document.querySelector('.about-us-img');
+	const parallaxImages2 = document.querySelectorAll('.offers2-img');
 	const movePictureUp = () => {
 		const scrollValue = window.scrollY;
 		const scrollSpeed = 0.019; // Dostosuj prędkość przesuwania zdjęć
 		const imgTop = parallaxImages.getBoundingClientRect().top;
-		const maxTop = 350;
-	  
+		// const maxTop = 350;
+
 		// Ogranicz przesunięcie obrazka w górę
 		if (scrollValue < 1500) {
-		  const offset = (scrollValue - imgTop) * scrollSpeed;
-		  parallaxImages.style.top = -offset + 'px';
+			const offset = (scrollValue - imgTop) * scrollSpeed;
+			parallaxImages.style.top = -offset + 'px';
 		}
-	  };
+	};
 
-	  window.addEventListener('scroll', movePictureUp);
-	  const windowScroll = () => {
+	window.addEventListener('scroll', movePictureUp);
+
+	const movePictureUp2 = () => {
+		const isDesktop = window.matchMedia('(min-width: 992px)').matches;
+		if (isDesktop === true) {
+			const scrollValue = window.scrollY;
+			parallaxImages2.forEach((img) => {
+				const scrollSpeed = 0.0109; // Dostosuj prędkość przesuwania zdjęć
+				const imgTop = img.getBoundingClientRect().bottom;
+				const offset = (scrollValue - imgTop) * scrollSpeed;
+				img.style.top = offset + 'px';
+				img.style.transition = 'top 2.3s';
+			});
+		}
+	};
+
+	window.addEventListener('scroll', movePictureUp2);
+	const windowScroll = () => {
 		const win = window.scrollY;
 		console.log(win); // Wyświetl odległość od góry w konsoli
-	  };
-	  
-	  window.addEventListener('scroll', windowScroll);
-	const mainImg = document.querySelector('.main-img');
+	};
+
+	window.addEventListener('scroll', windowScroll);
+	const mainImg = document.querySelectorAll('.main-img');
+
 	const scaleHeaderImg = () => {
-		const imageTop = mainImg.getBoundingClientRect().top;
+
+		mainImg.forEach((img) => {
+		const imageTop = img.getBoundingClientRect().top;
 		const windowHeight = window.innerHeight;
 
 		// Oblicz stosunek przewinięcia strony do pozycji zdjęcia
@@ -55,8 +83,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		scale = Math.max(scale, 1);
 
 		// Zastosuj skalę dla obrazu
-		mainImg.style.transform = `scale(${scale})`;
-	};
+		img.style.transform = `scale(${scale})`;
+		})}
 	window.addEventListener('scroll', scaleHeaderImg);
 
 	const bright = (e) => {
@@ -85,8 +113,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		brigthBackground2.style.top = brightY2 + 'px';
 		brigthBackground2.style.left = brightX2 + 'px';
 	};
+
 	const bright3 = (e3) => {
-		console.log('Funkcja bright2 została wywołana'); // Dodaj to
+		console.log('Funkcja bright3 została wywołana'); // Dodaj to
 		const x3 = e3.clientX;
 		const y3 = e3.clientY;
 		const backgroundTermsY = backgroundTerms.offsetTop;
@@ -96,9 +125,33 @@ document.addEventListener('DOMContentLoaded', function () {
 		brightBackground3.style.top = brightY3 + 'px';
 		brightBackground3.style.left = brightX3 + 'px';
 	};
+	// const bright4 = (e4) => {
+	// 	console.log('Funkcja bright4 została wywołana'); // Dodaj to
+	// 	const x4 = e4.clientX;
+	// 	const y4 = e4.clientY;
+	// 	const backgroundOffers2Y = backgroundOffers2.offsetTop;
+	// 	const backgroundOffers2X = backgroundOffers2.offsetLeft;
+	// 	const brightX4 = x4 - backgroundOffers2X;
+	// 	const brightY4 = y4 - backgroundOffers2Y;
+	// 	brightBackground4.style.top = brightY4 + 'px';
+	// 	brightBackground4.style.left = brightX4 + 'px';
+	// };
+	// const bright5 = (e5) => {
+	// 	console.log('Funkcja bright4 została wywołana'); // Dodaj to
+	// 	const x5 = e5.clientX;
+	// 	const y5 = e5.clientY;
+	// 	const backgroundBoxY = backgroundBox.offsetTop;
+	// 	const backgroundBoxX = backgroundBox.offsetLeft;
+	// 	const brightX5 = x5 - backgroundBoxX;
+	// 	const brightY5 = y5 - backgroundBoxY;
+	// 	brightBackground5.style.top = brightY5 + 'px';
+	// 	brightBackground5.style.left = brightX5 + 'px';
+	// };
 	backgroundHeader.addEventListener('mousemove', bright);
 	backgroundAboutUs.addEventListener('mousemove', bright2);
 	backgroundTerms.addEventListener('mousemove', bright3);
+	// backgroundOffers2.addEventListener('mousemove', bright4);
+	// backgroundBox.addEventListener('mousemove', bright5);
 
 	let inputValue = 'online! ';
 	let timeout;
@@ -197,7 +250,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	navBar.addEventListener('wheel', disableScroll, { passive: false });
 
 	const addActive = () => {
-		navBar.classList.toggle('nav-mobile-active')
+		navBar.classList.toggle('nav-mobile-active');
 		if (navBar.classList.contains('nav-mobile-active')) {
 			console.log('Klasa "nav-mobile-active" została dodana do navBar.');
 		} else {
@@ -215,13 +268,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	burgerBtn.addEventListener('click', () => {
 		console.log('Przycisk "burgerBtn" został kliknięty.');
-		
+
 		if (navBar.classList.contains('nav-mobile-active')) {
 			console.log('Klasa "nav-mobile-active" została dodana do navBar.');
 		} else {
 			console.log('Klasa "nav-mobile-active" została usunięta z navBar.');
 		}
-		
+
 		// Tutaj możesz dodać dodatkowe działania, które wykonują się po kliknięciu przycisku.
 	});
 
@@ -234,6 +287,4 @@ document.addEventListener('DOMContentLoaded', function () {
 	navItem.forEach((item) => {
 		item.addEventListener('click', removeA);
 	});
-
-	
 });
