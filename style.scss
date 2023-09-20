@@ -356,7 +356,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	margin: 1em;
-	margin-top: 50px;
+	margin-top: 150px;
 }
 .offers2 .offers2-container .offers2-box .offers2-info .offers2-heading {
 	text-align: center;
@@ -1180,7 +1180,8 @@ body {
 	}
 }
 
-@media (max-width: 992px) {
+
+@media (min-width: 0px) and (max-width: 992px) {
 	.header {
 		position: relative;
 		width: 100%;
@@ -1329,7 +1330,7 @@ body {
 			text-align: center;
 			height: 100vh;
 			width: 100%;
-			top: -1000px;
+			top: -1018px;
 			right: 0px;
 			list-style: none;
 			margin-top: -190px;
@@ -1380,7 +1381,7 @@ body {
 		}
 
 		.nav-mobile-active {
-			transform: translateY(1200px);
+			transform: translateY(1208px);
 		}
 
 		.burger {
@@ -1896,9 +1897,17 @@ body {
 	}
 }
 
-@media (min-width: 812px) and (max-width: 1500px) {
+@media (min-width: 992px) and (max-width: 1320px) {
+	.about-us {
+		.about-us-container {
+			.about-us-img {
+				
+			    right: -450px;
+			}
+		}
+	}
 }
-@media (min-width: 992px) and (max-width: 1500px) {
+@media (min-width: 993px) and (max-width: 1412px) {
 	.header {
 		position: relative;
 		width: 100%;
@@ -1911,7 +1920,7 @@ body {
 		overflow: hidden;
 		.box-img {
 			position: absolute;
-			width: 690px;
+			width: 650px;
 
 			height: auto;
 			top: 350px;
@@ -1960,6 +1969,7 @@ body {
 				margin-left: 10px;
 
 				.title {
+					text-align: center;
 					font-size: 2rem;
 					text-decoration: none;
 					color: #11080fbd;
@@ -1968,7 +1978,7 @@ body {
 					span {
 						display: block;
 						font-size: 2.8rem;
-						margin-left: 10px;
+						// margin-left: 10px;
 						color: #11080fbd;
 					}
 				}
@@ -1989,10 +1999,10 @@ body {
 				margin: 10px;
 				margin-top: 50px;
 				margin-right: 100px;
-				white-space: nowrap;
+				white-space: wrap;
 				.nav-item {
 					position: relative;
-					font-size: 1.5rem;
+					font-size: 1.2rem;
 					margin: 10px;
 					text-decoration: none;
 					color: #0000009f;
@@ -2136,4 +2146,6 @@ body {
 			}
 		}
 	}
+
+	
 }
