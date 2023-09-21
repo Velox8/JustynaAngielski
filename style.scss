@@ -459,9 +459,7 @@ body {
 		height: auto;
 		transition: top 3s;
 	}
-	.h2About-us {
-		text-align: center;
-	}
+	
 	.about-us-container {
 		display: flex;
 		justify-content: flex-start;
@@ -493,7 +491,7 @@ body {
 				text-align: left;
 				font-size: 1.5rem;
 			}
-			.h3Aboutus {
+			.h2Aboutus {
 				color: #723d46;
 				font-size: 2.8em;
 				padding: 10px;
@@ -1037,7 +1035,7 @@ body {
 
 					font-size: 1.86rem;
 				}
-				.h3Aboutus {
+				.h2Aboutus {
 					margin: 20px;
 					text-align: center;
 					font-size: 2.3em;
