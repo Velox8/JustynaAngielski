@@ -73,14 +73,6 @@ body {
 			margin: 30px;
 			margin-right: 350px;
 			text-align: left;
-			.flag {
-				position: absolute;
-				top: 5px;
-				left: 90px;
-				width: 50px;
-				height: auto;
-				animation: ikonAnimation 2s linear infinite;
-			}
 
 			.title {
 				font-size: 2rem;
@@ -370,22 +362,8 @@ body {
 	margin-bottom: 1em;
 	font-size: 1rem;
 }
-.offers2 .offers2-container .offers2-box .offers2-info .offers2-button {
-	margin-top: 1em;
-	width: 100%;
-	max-width: 100%;
-	height: 36px;
-	background-color: rgb(71, 218, 101);
-	font-size: 1rem;
-	border: 1px solid rgb(71, 218, 101);
-	box-shadow: 0px 0px 3px 3px rgb(71, 218, 101);
-	border-radius: 5px;
-	z-index: 0;
-	cursor: pointer;
-}
-.offers2 .offers2-container .offers2-box .offers2-info .offers2-button::before {
-	background-color: rgb(29, 210, 65);
-}
+
+
 
 @media (min-width: 576px) {
 	.offers2-header .offers2Header-text {
@@ -413,11 +391,7 @@ body {
 		max-width: 80%;
 	}
 }
-@media (min-width: 768px) {
-	.offers2 .offers2-button {
-		height: 36px;
-	}
-}
+
 
 @media (min-width: 1200px) {
 	.offers2 .offers2-container .box-img {
@@ -464,7 +438,6 @@ body {
 		margin: 5em;
 	}
 } /*# sourceMappingURL=offers2.css.map */
-
 
 .about-us {
 	font-family: 'Roboto', sans-serif;
@@ -603,9 +576,7 @@ body {
 	text-align: center;
 	font-size: 1.2rem;
 }
-.oferts .oferts-container .oferts-box .oferts-info .fa-check {
-	color: rgb(71, 218, 101);
-}
+
 .oferts .oferts-container .oferts-box .oferts-info2 {
 	color: rgba(21, 21, 21, 0.633);
 }
@@ -637,31 +608,20 @@ body {
 	cursor: pointer;
 }
 .oferts .oferts-container .oferts-box .boxButtonMiddle::before {
-	background-color: rgb(29, 210, 65);
+	content: '';
+	background-color: rgb(210, 29, 210);
 }
 .oferts .oferts-container .oferts-box .boxButton::before {
+	content:'';
 	background-color: rgba(186, 179, 179, 0.7960784314);
 }
 .oferts .oferts-container .oferts-box:hover {
 	transform: scale(1.05);
 }
-.oferts .moreOferts {
-	margin: 3em;
-	text-align: center;
-	font-size: 1.5rem;
-}
-.oferts .moreOferts .moreOfertsA {
-	color: rgba(11, 11, 11, 0.8666666667);
-	text-transform: uppercase;
-	transition: color 0.3s;
-}
-.oferts .moreOferts .moreOfertsA:before {
-	background-color: rgb(29, 210, 65);
-	border-radius: 5px;
-}
-.oferts .moreOferts .moreOfertsA:hover {
-	color: white;
-}
+
+
+
+
 
 @media (min-width: 772px) {
 	.oferts .whole-oferts-container {
@@ -700,7 +660,6 @@ body {
 		max-width: 290px;
 	}
 }
-
 
 .terms-and-conditions {
 	position: relative;
@@ -831,14 +790,6 @@ body {
 			position: relative;
 			margin: 30px;
 			margin-right: 350px;
-			.flag {
-				position: absolute;
-				top: 5px;
-				left: 105px;
-				width: 80px;
-				height: auto;
-				animation: ikonAnimation 2s linear infinite;
-			}
 
 			.ftitle {
 				font-size: 2rem;
@@ -849,8 +800,6 @@ body {
 					display: block;
 					font-size: 2.8rem;
 					color: #11080fbd;
-					// margin-left: 10px;
-					// text-align: center;
 				}
 			}
 		}
@@ -896,145 +845,54 @@ body {
 	}
 }
 
-
 @media (min-width: 0px) and (max-width: 992px) {
 	.header {
-		position: relative;
-		width: 100%;
 		height: 1000px !important;
 
-		overflow: hidden;
-
 		.box-img {
-			position: absolute;
 			width: 350px !important;
 
-			height: auto;
 			top: 260px;
 			left: 50%;
 			transform: translate(-50%);
 			border-radius: 50%;
-			border-top-left-radius: 80%;
-			border-top-right-radius: 80%;
+
 			border-bottom-right-radius: 80%;
 			border-bottom-left-radius: 60%;
 
-			overflow: hidden;
-
 			.main-img {
 				width: 100%;
-				height: 100%;
-				transition: transform 2s;
+
 				// object-position: 30px 0px;
 			}
 		}
-		.breithBackground {
-			content: '';
-			position: absolute;
-			top: 0%;
-			left: 0%;
-			transform: translate(-50%, -50%);
-			width: 1800px; /* Szerokość obszaru */
-			height: 1800px; /* Wysokość obszaru */
-			background: radial-gradient(
-				circle at center,
-				rgba(255, 255, 255, 0.705) 0%,
-				rgba(255, 255, 255, 0) 50%
-			);
-			opacity: 0.5; /* Początkowa przezroczystość */
-			transition: opacity 0.6s; /* Czas trwania animacji */
-		}
+
 		.nav-desktop {
-			display: flex;
 			justify-content: center;
 
 			.navbar-title {
 				text-align: center;
-				position: relative;
+
 				margin: 0px !important;
 				padding: 20px;
 				margin-right: 0px;
 				width: 100%;
-				.flag {
-					position: absolute;
-					top: 5px;
-					left: 90px;
-					width: 50px;
-					height: auto;
-					animation: ikonAnimation 2s linear infinite;
-				}
 
 				.title {
 					align-self: center;
 					text-align: center;
 					margin: 0;
-					font-size: 2rem;
-					text-decoration: none;
-					color: #11080fbd;
 
 					span {
-						display: block;
-						font-size: 2.8rem;
 						margin-left: 10px;
-						color: #11080fbd;
-					}
-				}
-				@keyframes ikonAnimation {
-					0% {
-						transform: translateX(0);
-					}
-					10% {
-						transform: translateX(-2px) translateY(-2px);
-					}
-
-					0% {
-						transform: translateX(0px) translateY(0px);
 					}
 				}
 			}
 			.nav-bar {
 				display: none;
-				margin: 10px;
-				margin-top: 50px;
-				margin-left: 50px;
+
 				.nav-item {
-					position: relative;
 					font-size: 1.5rem;
-					margin: 10px;
-
-					text-decoration: none;
-					color: #0000009f;
-
-					transition: transform 1s, color 0.2s;
-
-					&:before {
-						content: '';
-						position: absolute;
-						top: -38px;
-						left: -5px;
-						width: 3px;
-						height: 200%;
-						background-color: white; // Ustaw tło na transparentne
-						transition: top 0.3s;
-						color: white;
-						opacity: 0;
-					}
-					&::after {
-						content: '';
-						color: white;
-					}
-				}
-				.nav-item:hover::before {
-					top: -10px;
-					color: white; // Dodaj zmianę koloru tekstu
-					opacity: 1;
-				}
-				.nav-item:hover::after {
-					color: white; // Dodaj zmianę koloru tekstu
-					opacity: 1;
-				}
-				.nav-item:hover {
-					color: white;
 				}
 			}
 		}
@@ -1115,7 +973,6 @@ body {
 		}
 
 		.header-text {
-			position: relative;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -1126,8 +983,7 @@ body {
 
 			.h1Header {
 				margin-left: 0px;
-				color: #723d46;
-				font-weight: bold;
+
 				font-size: 3rem;
 				.h1-span {
 					top: 150px;
@@ -1137,16 +993,13 @@ body {
 			}
 			.headerP {
 				font-size: 1.2rem;
-				margin: 10px;
 			}
 			.headerP2 {
-				position: absolute;
 				top: 180px;
 				left: 50%;
 				transform: translateX(-50%);
 				text-align: center;
 				font-size: 1rem;
-				margin: 10px;
 			}
 			.a-contact-button {
 				.contact-button {
@@ -1159,37 +1012,19 @@ body {
 	}
 
 	.about-us {
-		position: relative;
-		width: 100%;
-		height: 750px;
-		background-color: #eec0c6;
-		background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
-		overflow: hidden;
-
 		.about-us-img {
 			display: none;
-			position: absolute;
-			top: 300px;
-
-			right: -260px;
-			width: 1000px;
-
-			height: auto;
-			transition: top 0.2s;
 		}
 		.h2About-us {
 			font-size: 2rem;
 			text-align: center;
 		}
 		.about-us-container {
-			display: flex;
 			justify-content: center;
 
-			margin: 50px;
 			margin-top: 0px;
 			margin-left: 0px;
 			width: 100%;
-			height: 100%;
 
 			.about-us-text {
 				display: flex;
@@ -1199,69 +1034,34 @@ body {
 				.about-us-p {
 					margin: 20px;
 					text-align: center;
-					text-align: left;
+
 					font-size: 1.86rem;
 				}
 				.h3Aboutus {
 					margin: 20px;
 					text-align: center;
 					font-size: 2.3em;
-					padding: 10px;
-					padding-left: 0px;
-				}
-				.aboutusP {
-					line-height: 1.5;
 				}
 			}
 		}
 	}
 
-	
-
 	.contact {
-		// margin-top: 100px;
-		width: 100%;
 		height: 600px;
-		background-color: #f6ecc4;
-		background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
-
-		.h2-contact {
-			padding: 50px !important;
-			text-align: center;
-			font-size: 2.3rem;
-		}
 		.contact-box-container {
-			display: flex;
-			flex-direction: column;
-			text-align: center;
 			.contact-box {
 				display: flex;
 				flex-direction: column;
 				.contactP {
 					margin: 30px;
-					font-size: 1.5rem;
-					transition: color 0.5s;
-					.fa-brands {
-						font-size: 1.5rem;
-					}
-
-					.fa-soild {
-						font-size: 1.5rem;
-					}
-					&:hover {
-						color: #fff;
-					}
 				}
 			}
 		}
 	}
 
 	.footer {
-		width: 100%;
-		height: 100%;
 		margin-top: -50px;
-		background-color: #eec0c6;
-		background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+
 		overflow: hidden;
 		.footer-container {
 			display: flex;
@@ -1274,32 +1074,16 @@ body {
 				align-self: center;
 				width: 100%;
 
-				position: relative;
 				padding: 20px;
 				margin: 0px;
 				margin-right: 0px;
 
-				.flag {
-					position: none;
-					top: 6px;
-					left: 100px;
-					width: 60px;
-
-					height: auto;
-					margin-left: 20px;
-					animation: ikonAnimation 2s linear infinite;
-				}
-
 				.ftitle {
 					font-size: 1.5rem;
-					text-decoration: none;
-					color: #11080fbd;
 
 					span {
-						display: block;
 						font-size: 2rem !important;
 						margin-left: 10px;
-						color: #11080fbd;
 					}
 				}
 			}
@@ -1314,18 +1098,14 @@ body {
 				flex-direction: column;
 				align-items: center;
 				.footerP {
-					margin: 30px;
 					font-size: 1.5rem;
-					transition: color 0.5s;
+
 					.fa-brands {
 						font-size: 1.5rem;
 					}
 
 					.fa-soild {
 						font-size: 1.5rem;
-					}
-					&:hover {
-						color: #fff;
 					}
 				}
 			}
@@ -1335,10 +1115,6 @@ body {
 			display: flex;
 			justify-content: center;
 			padding: 10px;
-			font-size: 1.5rem;
-			.footer-year {
-				margin-right: 10px;
-			}
 		}
 	}
 }
@@ -1347,65 +1123,45 @@ body {
 	.about-us {
 		.about-us-container {
 			.about-us-img {
-				
-			    right: -450px;
+				right: -450px;
 			}
 		}
 	}
 }
 @media (min-width: 993px) and (max-width: 1412px) {
 	.header {
-		
 		.box-img {
-			
 			width: 650px;
 
-			
 			top: 350px;
 			right: -30px;
 			// border-radius: 50%;
-		
-
-			
 		}
-	
+
 		.nav-desktop {
-			display: flex;
 			justify-content: flex-end;
-			position: relative;
 
 			.navbar-title {
 				position: absolute;
 				top: 0px;
 				left: 30px;
-				margin: 30px;
-				margin-right: 350px;
+
 				margin-left: 10px;
 
 				.title {
 					text-align: center;
-					font-size: 2rem;
-					text-decoration: none;
-					color: #11080fbd;
+
 					white-space: nowrap;
 
 					span {
-						display: block;
 						font-size: 2.8rem;
-						// margin-left: 10px;
-						color: #11080fbd;
 					}
 				}
-			
 			}
 			.nav-bar {
-	
 				.nav-item {
-					position: relative;
 					font-size: 1.2rem;
-					margin: 10px;
-					}
-			
+				}
 			}
 		}
 
@@ -1417,35 +1173,21 @@ body {
 		}
 
 		.header-text {
-			position: relative;
 			min-width: 50%;
-			margin: 50px;
-			margin-top: 240px;
-			margin-left: 100px;
+
 			.h1Header {
 				margin-left: 10px;
-				color: #723d46;
-				font-weight: bold;
-				font-size: 3rem;
+
 				.h1-span {
 					display: block;
-					color: rgb(228, 101, 122);
 				}
 			}
 			.headerP {
 				font-size: 1.5rem;
-				margin: 10px;
 			}
 			.headerP2 {
-				position: absolute;
-				top: 180px;
-				left: 0px;
 				font-size: 1rem;
-				margin: 10px;
 			}
-		
 		}
 	}
-
-	
 }
