@@ -131,7 +131,7 @@ body {
 
 				/* Kolor dla drugiego elementu */
 				&:nth-child(5) {
-					color: yellow;
+					color: rgb(248, 146, 12);
 				}
 
 				/* Kolor dla trzeciego elementu */
@@ -261,6 +261,7 @@ body {
 	margin: 2em;
 	text-transform: uppercase;
 	font-size: 2.1rem;
+text-align: center;
 	// font-weight: 300;
 	// color: rgba(11, 11, 11, 0.8666666667);
 }
@@ -319,6 +320,7 @@ body {
 	position: relative;
 	width: 100%;
 	height: 500px;
+	
 	order: 0;
 }
 .offers2 .offers2-container .box-img-right {
@@ -333,7 +335,7 @@ body {
 	height: 500px;
 	object-fit: cover;
 	border-radius: 25%;
-
+	
 	transition: transform 0.5s;
 }
 .offers2 .offers2-container .offers2-box .offers2-img:hover {
@@ -353,6 +355,8 @@ body {
 }
 .offers2 .offers2-container .offers2-box .offers2-info .offers2-heading {
 	text-align: center;
+	
+	margin-top: 30px;
 	// margin-top: 1em;
 	// margin-bottom: 1em;
 	font-size: 2rem;
@@ -949,7 +953,7 @@ body {
 
 					/* Kolor dla drugiego elementu */
 					&:nth-child(5) {
-						color: yellow;
+						color:  rgb(248, 146, 12);
 					}
 
 					/* Kolor dla trzeciego elementu */
@@ -1023,6 +1027,11 @@ body {
 	.about-us {
 		.about-us-img {
 			display: none;
+			// top: 300px !important;
+			// left: 60%;
+			// width: 59%;
+			
+			// transform: translate(-50%);
 		}
 		.h2About-us {
 			font-size: 2rem;
@@ -1055,7 +1064,19 @@ body {
 			}
 		}
 	}
-
+	.certy{
+	
+		.certy-img {
+				
+				max-width: 300px;
+				cursor: none;
+				&:hover{
+					transform: scale(1);
+				}
+			
+			}
+		
+	}
 	.contact {
 		height: 600px;
 		.contact-box-container {
